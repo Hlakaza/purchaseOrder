@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>PurchaseOrder</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="#" class="logo"><img src="/KES_Logo_dark_rect.png" alt="" class="imgLogo"></a>
+        <div class="header-right">
+            <div id="title">Purchase Order</div>
+        </div>
+    </div>
+    <div class="document active">
+        <div class="spreadSheetGroup">
+
+
+            <table class="shipToFrom">
+                <thead style="font-weight:bold">
+                    <tr>
+                        <th>To:</th>
+                        <th>Company Details:</th>
+                        <th>PO Details:</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td contenteditable="true" style="width:33.33%">
+
+                        </td>
+                        <td contenteditable="true" style="width:33.33%">
+                            Katlego Electrical Solutions Pty <br />
+                            Pretoria<br />
+                            012<br />
+                        </td>
+                        <td contenteditable="true" style="width:33.33%">
+                            PO Number: PO001k <br>
+                            Date Created: 08.07.2020 <br>
+                            Date Issued: 08.07.2020 <br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr style="visibility:hidden" />
+
+
+            <!-- <table class="tableBorder">
+                <thead style="font-weight:bold">
+                    <tr>
+                        <th>SHIPPING METHOD</th>
+                        <th>SPECIFIED BY</th>
+                        <th>SIDEMARK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true" style="width:33.3%"></td>
+                        <td contenteditable="true" style="width:33.3%"></td>
+                        <td contenteditable="true" style="width:33.3%"></td>
+                    </tr>
+                </tbody>
+            </table> -->
+
+
+
+            <table class="proposedWork" width="100%" style="margin-top:20px">
+                <thead>
+                    <th>UNIT</th>
+                    <th>QTY</th>
+                    <th>DESCRIPTION</th>
+                    <th>COST</th>
+                    <th class="amountColumn">TOTAL</th>
+                    <th class="docEdit trAdd">+</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true">1</td>
+                        <td class="unit" contenteditable="true"></td>
+                        <td contenteditable="true" class="description"></td>
+                        <td class="amount" contenteditable="true">0</td>
+                        <td class="amount amountColumn rowTotal" contenteditable="true">0</td>
+                        <td class="docEdit tdDelete">X</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none;text-align:right">Sub Total:</td>
+                        <td class="amount subtotal">0.00</td>
+                        <td class="docEdit"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none;text-align:right">Gross Earnings:</td>
+                        <td class="amount" contenteditable="true">0.00</td>
+                        <td class="docEdit"></td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none;text-align:right;white-space:nowrap">Discount:</td>
+                        <td class="amount" contenteditable="true">0.00</td>
+                        <td class="docEdit"></td>
+                    </tr> -->
+                    <tr>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+                        <td style="border:none;text-align:right;color: red;">TOTAL:</td>
+                        <td class="total amount" contenteditable="true">0.00</td>
+                        <td class=" docEdit"></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td width="50%" style="vertical-align:top">
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:left">
+                                            <!-- <p>1. Please send two copies of your invoice.</p>
+                                            <p>2. Enter this order in accordance with the prices, terms, delivery
+                                                method, and specifications listed above.</p>
+                                            <p>3. Please notify us immediately if you are unable to ship as specified.
+                                            </p>
+                                            <p>4. Send all correspondence to:</p> -->
+                                            <p style="padding-left:20px">
+                                               Katlego Electrical Solutions <br>
+                                               Gauteng Pretoria <br>
+                                               012
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="padding-left:40px; width:50%; vertical-align:top">
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:left">
+                                            <strong>Notes to supplier:</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td contenteditable="true" style="text-align:left;border: 1px solid #000">Please
+                                            ship all goods to our office using our UPS account #1234</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top:60px">
+                                            Authorized by: _____________________________ Date: __________
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
